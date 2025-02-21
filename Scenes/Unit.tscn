@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://blxku7mpid8jh"]
+
+[ext_resource type="Script" path="res://Scripts/Unit.cs" id="1_b0a7f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gqi8u"]
+
+[node name="Unit" type="Node2D"]
+script = ExtResource("1_b0a7f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+shape = SubResource("RectangleShape2D_gqi8u")

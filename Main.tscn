@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://brplp0yuy1k6t"]
+
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_ky2g3"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ky2g3")
+
+[node name="Battlefield" type="Node2D" parent="."]
+
+[node name="Bench" type="Node2D" parent="."]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WaveLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ShopButton" type="Button" parent="UI"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ShopContainer" type="HBoxContainer" parent="UI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

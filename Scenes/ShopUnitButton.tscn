@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs3a2mfg8v72c"]
+
+[ext_resource type="Script" path="res://Scripts/ShopUnitButton.cs" id="1_l81ci"]
+
+[node name="ShopUnitButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_l81ci")
+
+[node name="UnitName" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
